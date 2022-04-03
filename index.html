@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RESPONSIBLE FOR RESPONSIVENESS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saif Home Advisors main focus is to buy houses in cities like moncton, dieppe and riverview."
+    />
+    <!-- =========== FAVICONS =========== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <!-- =========== GOOGLE FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- =========== CSS STYLES =========== -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <!-- =========== ICONS FONT AWESOME =========== -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- =========== COMPANY/WEBSITE TITLE =========== -->
+    <title>
+      Saif Home Advisors - Buy Houses in Moncton | Dieppe | Riverview.
+    </title>
+  </head>
+
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header__container">
+      <nav class="navbar__container flex">
+        <!-- COMPANY LOGO -->
+        <a href="#">
+          <img
+            class="navbar__logo-img"
+            alt="Saif Home Advisors logo"
+            src="./img/saif-home-advisors-header-logo.png"
+          />
+        </a>
+        <!-- NAVIGATION -->
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list flex">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link active">HOME</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#property" class="navbar__link">SUCCESS STORIES</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#cta" class="navbar__link">BLOGS</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#faq" class="navbar__link">FAQ</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link">GET AN OFFER</a>
+            </li>
+            <!-- NAVBAR CTA (CALL TO ACTION) -->
+            <li class="navbar__item">
+              <a href="#cta" class="btn cta__btn">
+                <span class="btn__inner">CONTACT US</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MOBILE NAVIGATION CONTROL BUTTONS -->
+        <button class="navbar__menu-btns">
+          <i class="fa-solid fa-bars navbar__menu-icon navbar__menu-bars"></i>
+          <i class="fa-solid fa-xmark navbar__menu-icon navbar__menu-times"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- =========== HERO =========== -->
+      <section class="section__hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="primary__heading">SAIF HOME ADVISORS</h1>
+            <p class="hero__intro">
+              We buy houses in cities like moncton, dieppe, and riverview.
+            </p>
+            <p class="hero__intro">
+              We can give you and your family the life that they deserve to
+              have. We can take care of this for you and give you an offer for
+              your home without ANY repairs.
+            </p>
+            <a href="#cta" class="btn cta__btn">Contact Us</a>
+          </div>
+          <div class="hero__cta-form">
+            <h2 class="secondary__heading text-center">FIND OUT BEST OFFER</h2>
+            <form action="" class="cta__form">
+              <div>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Name"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Phone Number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  id="address"
+                  type="text"
+                  placeholder="Property Address"
+                  name="address"
+                  required
+                />
+              </div>
+              <button class="btn cta__btn">Check Now</button>
+              <div>
+                <p class="separator">
+                  <span>&nbsp;</span>Or<span>&nbsp;</span>
+                </p>
+              </div>
+              <button class="btn cta__btn cta__btn-call">
+                <i class="fa-solid fa-phone"></i> CALL 506-625-7492
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- =========== ABOUT US =========== -->
+      <section class="section__about section-space">
+        <div class="about__container">
+          <div class="about__content">
+            <h2 class="secondary__heading">ABOUT US</h2>
+            <p class="about__description">
+              Selling your home is not an easy process, especially when you need
+              to sell your home fast. If you are in a hurry like most homeowners
+              that frequently ask us questions, then chances are, you are
+              already thinking about the small time frame that you have to sell
+              your home in. If you are thinking about your family or living
+              situation and how can you provide a safe and better living
+              situation for them and yourself then we can help you.
+            </p>
+            <a href="#cta" class="btn read__btn">Read More</a>
+          </div>
+          <div class="about__img-container">
+            <div
+              class="about__img-back"
+              role="img"
+              aria-label="Beautiful Home Outdoor scene, outdoor living space"
+            ></div>
+            <div
+              class="about__img-middle"
+              role="img"
+              aria-label="Modern, beautiful living room"
+            ></div>
+            <div
+              class="about__img-front"
+              role="img"
+              aria-label="Beautiful dining room, dining table and chairs"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== FEATURES =========== -->
+      <section class="seaction__feature section-space">
+        <div class="feature__container grid grid-2-cols">
+          <div class="feature__img-container">
+            <div
+              class="feature__img-back"
+              role="img"
+              aria-label="Beautiful living room space"
+            ></div>
+            <div
+              class="feature__img-front"
+              role="img"
+              aria-label="Beautiful Home with Swimming Pool"
+            ></div>
+          </div>
+          <div class="feature__content">
+            <h2 class="secondary__heading">BUYER & SELLER INFORMATION</h2>
+            <p class="feature__description">
+              Although this is your goal, things will get in the way like how
+              long it may take to sell your home with an agent or selling your
+              house before foreclosure. Mortgage payments can also get in the
+              way if you are late or struggling with the mortgage.
+            </p>
+            <div class="feature__card-container">
+              <!-- FEATURE 01 -->
+              <div class="feature__card">
+                <i class="fa-solid fa-house-heart feature__icon"></i>
+                <h3 class="feature__card-title">Buy Market</h3>
+                <p class="feature__card-text">
+                  Our company’s main purpose is to help you buy your home &
+                  Market quickly by offering a competitive cash.
+                </p>
+              </div>
+              <!-- FEATURE 02 -->
+              <div class="feature__card">
+                <i class="fa-solid fa-badge-percent feature__icon"></i>
+                <h3 class="feature__card-title">Property Seller</h3>
+                <p class="feature__card-text">
+                  Then chances are you are already thinking about the small time
+                  frame that you have to sell your property.
+                </p>
+              </div>
+            </div>
+            <div class="feature__statics">
+              <div class="feature__static">
+                <span class="feature__static__text">Buy Market 85%</span>
+                <div class="feature__static-line">
+                  <div class="feature__static-progress market__progress"></div>
+                </div>
+              </div>
+              <div class="feature__static">
+                <span class="feature__static__text">Property Seller 65%</span>
+                <div class="feature__static-line">
+                  <div class="feature__static-progress seller__progress"></div>
+                </div>
+              </div>
+              <div class="feature__static">
+                <span class="feature__static__text">Happy Clients 90%</span>
+                <div class="feature__static-line">
+                  <div class="feature__static-progress client__progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== HOW IT WORKS =========== -->
+      <section class="section__how section-space">
+        <div class="container">
+          <h2 class="secondary__heading text-center">How It Works</h2>
+          <div class="steps__container grid grid-3-cols">
+            <!-- STEP 01 -->
+            <div class="step__card">
+              <i class="fa-solid fa-square-info step__icon"></i>
+              <h3 class="tertiary__heading">PROVIDE YOUR INFO</h3>
+              <p class="step__card-text">
+                As soon as our team receives your Information , we get started
+                on your property valuation immediately.
+              </p>
+            </div>
+            <!-- STEP 02 -->
+            <div class="step__card">
+              <i class="fa-solid fa-file-invoice-dollar step__icon"></i>
+              <h3 class="tertiary__heading">RECEIVE YOUR OFFER</h3>
+              <p class="step__card-text">
+                Once our team values your property, we give you a fair and fast
+                cash offer for your immediate receive your offer.
+              </p>
+            </div>
+            <!-- STEP 03 -->
+            <div class="step__card">
+              <i class="fa-solid fa-person-sign step__icon"></i>
+              <h3 class="tertiary__heading">SET MOVE OUT DATE</h3>
+              <p class="step__card-text">
+                Once we reach an agreement, you get to choose your move out
+                date.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== WHAT WE DO =========== -->
+      <section class="section__service section-space">
+        <div class="container grid grid-2-cols">
+          <div class="service__content">
+            <h2 class="secondary__heading">We Buy Houses</h2>
+            <p class="service__description">
+              We buy houses in any condition with 0 fees for you to worry about.
+              Your house can have severe fire damage, and we would still wanted.
+              Even if every pipe in every wall were to burst causing massive
+              water damage, we want to buy your house fast.
+            </p>
+          </div>
+          <div class="service__img-container">
+            <img
+              class="service__img"
+              alt="Beautiful Home with Swimming Pool"
+              src="./img/we-buy-houses.png"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- =========== TESTIMONIALS =========== -->
+      <section class="section__testimonials section-space">
+        <div class="testimonials__container">
+          <h2 class="secondary__heading text-center">PEOPLE TRUST US</h2>
+          <div class="testimonial__carousel">
+            <div
+              class="testimonial__card-container"
+              id="testimonial-card-container"
+            >
+              <!-- TESTIMONIAL 01 -->
+              <figure class="testimonial__card">
+                <img
+                  class="testimonial__img"
+                  alt="Photo of customer Albert N. Cabrales"
+                  src="./img/customers/joseph.jpg"
+                />
+                <blockquote class="testimonial__text">
+                  From beginning to end the whole process was smooth and easy.
+                  It took about 3 weeks from start to finish with very little
+                  effort on my part. They even gave me an extra week after
+                  closing to move out which made my life so much easier.
+                </blockquote>
+                <p class="testimonial__name">Albert N. Cabrales</p>
+              </figure>
+              <!-- TESTIMONIAL 02 -->
+              <figure class="testimonial__card">
+                <img
+                  class="testimonial__img"
+                  alt="Photo of customer Donald B. Gilchrist"
+                  src="./img/customers/harry.jpg"
+                />
+                <blockquote class="testimonial__text">
+                  I was so tired of dealing with one of my tenants, that I just
+                  wanted to sell my rental home as quick as possible. I came
+                  across Deol Home advisors contacted them, they were
+                  transparent and honest. I appreciate that! So I decided to
+                  take their offer and it was so painless and fast.
+                </blockquote>
+                <p class="testimonial__name">Donald B. Gilchrist</p>
+              </figure>
+              <!-- TESTIMONIAL 03 -->
+              <figure class="testimonial__card">
+                <img
+                  class="testimonial__img"
+                  alt="Photo of customer Sheryl M. Roy"
+                  src="./img/customers/sheryl.jpg"
+                />
+                <blockquote class="testimonial__text">
+                  Very professional and cooperative company that was well versed
+                  in this type of transaction. They purchased my rental property
+                  in Moncton and closed in two weeks with a remote closing as I
+                  did not live in Moncton. The entire transaction went very
+                  smoothly. I would certainly give them a very good.
+                </blockquote>
+                <p class="testimonial__name">Sheryl M. Roy</p>
+              </figure>
+            </div>
+            <!-- SLIDE ARROWS -->
+            <div class="arrows">
+              <div class="arrow prev" id="testimonial-left-arrow">
+                <span class="svg svg__arrow-left">
+                  <svg
+                    version="1.1"
+                    id="svg6-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next" id="testimonial-right-arrow">
+                <span class="svg svg__arrow-right">
+                  <svg
+                    version="1.1"
+                    id="svg7-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== CTA - OPT IN FORM =========== -->
+      <section class="section__cta grid grid-2-cols">
+        <div class="cta__form-container">
+          <h2 class="secondary__heading text-center">FIND OUT BEST OFFER</h2>
+          <form action="" class="cta__form">
+            <div>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Name"
+                name="full-name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                id="phone"
+                type="phone"
+                placeholder="Phone Number"
+                name="phone"
+                required
+              />
+            </div>
+            <div>
+              <input
+                id="address"
+                type="text"
+                placeholder="Property Address"
+                name="address"
+                required
+              />
+            </div>
+            <div class="cta__btn-end">
+              <button class="btn cta__btn">Check Now</button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="cta__img"
+          role="img"
+          aria-label="Home deal offer, best sale offer"
+        ></div>
+      </section>
+      <!-- =========== NEWS/BLOGS =========== -->
+      <section class="section__blog section-space">
+        <div class="blogs__container">
+          <h2 class="secondary__heading text-center">LATEST NEWS & BLOGS</h2>
+          <div class="blog__carousel">
+            <div class="blog__card-container" id="blog-card-container">
+              <!-- blog 01 -->
+              <article class="blog__card">
+                <div class="blog__img-container">
+                  <img
+                    class="blog__img"
+                    alt="Photo of customer Dave Bryson"
+                    src="./img/blogs/blog-1.jpg"
+                  />
+                  <div class="blog__full-date">
+                    <p class="blog__month">Dec</p>
+                    <p class="blog__date">14</p>
+                    <p class="blog__year">2021</p>
+                  </div>
+                </div>
+                <div class="blog__text-container">
+                  <h3 class="tertiary__heading">
+                    Buying House in Canada without Realtor
+                  </h3>
+                  <p class="blog__text">
+                    Potential buyers who do not have a broker frequently
+                    approach listing agencies. Buyers may wish to save money on
+                    commissions and fees or may have a....
+                  </p>
+                </div>
+              </article>
+              <!-- blog 02 -->
+              <article class="blog__card">
+                <div class="blog__img-container">
+                  <img
+                    class="blog__img"
+                    alt="Photo of customer Dave Bryson"
+                    src="img/customers/dave.jpg"
+                  />
+                  <div class="blog__full-date">
+                    <p class="blog__month">Nov</p>
+                    <p class="blog__date">29</p>
+                    <p class="blog__year">2021</p>
+                  </div>
+                </div>
+                <div class="blog__text-container">
+                  <h3 class="tertiary__heading">
+                    What's the average cost to buy house in Canada
+                  </h3>
+                  <p class="blog__text">
+                    You've probably heard people extol the virtues of home
+                    ownership. Canadian real estate has historically had strong
+                    long-term growth, which speaks....
+                  </p>
+                </div>
+              </article>
+              <!-- blog 03 -->
+              <article class="blog__card">
+                <div class="blog__img-container">
+                  <!-- <img
+                    class="blog__img"
+                    alt="Photo of customer Dave Bryson"
+                    src="img/customers/dave.jpg"
+                  /> -->
+                  <img
+                    class="blog__img"
+                    alt="Beautiful Home with Swimming Pool"
+                    src="./img/hero/feature-3.jpg"
+                  />
+                  <div class="blog__full-date">
+                    <p class="blog__month">Nov</p>
+                    <p class="blog__date">11</p>
+                    <p class="blog__year">2021</p>
+                  </div>
+                </div>
+                <div class="blog__text-container">
+                  <h3 class="tertiary__heading">How to buy house in Canada</h3>
+                  <p class="blog__text">
+                    Canada has a strong ex-pat community, which is
+                    unsurprisingly considered as the country's wealth of
+                    opportunities. Whether you're interested in....
+                  </p>
+                </div>
+              </article>
+              <!-- blog 04 -->
+              <article class="blog__card">
+                <div class="blog__img-container">
+                  <img
+                    class="blog__img"
+                    alt="Photo of customer Dave Bryson"
+                    src="img/customers/dave.jpg"
+                  />
+                  <div class="blog__full-date">
+                    <p class="blog__month">Jan</p>
+                    <p class="blog__date">03</p>
+                    <p class="blog__year">2022</p>
+                  </div>
+                </div>
+                <div class="blog__text-container">
+                  <h3 class="tertiary__heading">
+                    Best Books For Real Estate Agents
+                  </h3>
+                  <p class="blog__text">
+                    While you may not have been in the market for a new home,
+                    happening upon your dream home and learning that it is
+                    available can be quite exciting....
+                  </p>
+                </div>
+              </article>
+              <!-- blog 05 -->
+              <article class="blog__card">
+                <div class="blog__img-container">
+                  <img
+                    class="blog__img"
+                    alt="Photo of customer Dave Bryson"
+                    src="img/customers/dave.jpg"
+                  />
+                  <div class="blog__full-date">
+                    <p class="blog__month">Nov</p>
+                    <p class="blog__date">29</p>
+                    <p class="blog__year">2021</p>
+                  </div>
+                </div>
+                <div class="blog__text-container">
+                  <h3 class="tertiary__heading">
+                    Canadian Real Estate Market Crash
+                  </h3>
+                  <p class="blog__text">
+                    Ys per the Canadian Real Estate Association, average house
+                    prices increased 14% over the last year, raising worries
+                    that Canada’s most costly....
+                  </p>
+                </div>
+              </article>
+            </div>
+            <!-- SLIDE ARROWS -->
+            <div class="arrows">
+              <div class="arrow prev" id="blog-left-arrow">
+                <span class="svg svg__arrow-left">
+                  <svg
+                    version="1.1"
+                    id="svg8-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next" id="blog-right-arrow">
+                <span class="svg svg__arrow-right">
+                  <svg
+                    version="1.1"
+                    id="svg9-Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="14px"
+                    height="26px"
+                    viewBox="0 0 14 26"
+                    enable-background="new 0 0 14 26"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
+                    />
+                  </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========== FOOTER =========== -->
+    <footer class="footer section-space">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <nav class="footer__nav-col">
+            <a href="#" class="footer__logo">
+              <img
+                class="footer__logo-img"
+                alt="Saif Home Advisors logo"
+                src="./img/Saif_Home_Advisors-footer-logo.png"
+              />
+            </a>
+            <!-- FOOTER NAVIGATIONs -->
+            <div class="footer__menu">
+              <ul class="footer__menu-list flex">
+                <li class="footer__item">
+                  <a href="#" class="footer__link active">HOME</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#property" class="footer__link">SUCCESS STORIES</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#cta" class="footer__link">BLOGS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#faq" class="footer__link">FAQ</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#about" class="footer__link">GET AN OFFER</a>
+                </li>
+              </ul>
+            </div>
+            <!-- MOBILE NAVIGATION CONTROL BUTTONS -->
+            <button class="footer__menu-btns">
+              <i
+                class="fa-solid fa-bars navbar__menu-icon navbar__menu-bars"
+              ></i>
+              <i
+                class="fa-solid fa-xmark navbar__menu-icon navbar__menu-times"
+              ></i>
+            </button>
+          </nav>
+          <div class="footer__social-col">
+            <!-- FOOTER CTA -->
+            <form action="" class="footer__cta-form">
+              <div>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <button class="btn footer__cta-btn cta__btn">Subscribe</button>
+            </form>
+            <!-- FOOTER SOCIAL LINKS -->
+            <ul class="footer__social-list flex">
+              <li>
+                <a class="footer__social-link" href="#">
+                  <i class="fa-brands fa-facebook-f social__icon"></i>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#">
+                  <i class="fa-brands fa-twitter social__icon"></i>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#">
+                  <i class="fa-brands fa-linkedin-in social__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- FOOTER COPYRIGHT -->
+        <div class="footer__copy-container">
+          <p class="footer__copyright">
+            Copyright &copy; 2022 Saif Home Advisors. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- =========== MODAL/POPUP =========== -->
+    <!-- <div class="popup hidden" id="popup">
+      <div class="popup__content keep__popup">
+        <button class="popup__close">&times;</button>
+        <h2 class="popup__title keep__popup">TITLE</h2>
+      </div>
+    </div> -->
+    <!-- =========== JAVASCRIPT =========== -->
+    <!-- <script src="./js/app.js"></script>
+    <script src="./js/progress.js"></script> -->
+  </body>
+</html>

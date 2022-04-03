@@ -1,0 +1,729 @@
+/* =========== VARIABLES AND GENERAL STYLE IS AVAILABLE IN general.css file =========== */
+
+/* =========== HEADER =========== */
+.header__container{
+  background-color: #fff;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.navbar__container{
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+  max-height: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.navbar__logo-img {
+  /* Logo size = 142*142 px */
+  height: 12.2rem;
+}
+
+.navbar__menu-list {
+  gap: 4.8rem;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+  color: rgba(14, 54, 81, 0.8);
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+  color: rgba(14, 54, 81, 0.6);
+}
+
+/* ACTIVE LINK */
+.active.footer__link:hover,
+.active.footer__link:active{
+  color: rgba(14, 54, 81, 0.8);
+}
+
+/* STICKY NAVIGATION */
+.sticky .header__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: var(--z-fixed);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: all 300ms;
+}
+
+.sticky .section__hero {
+  margin-top: 9.6rem;
+}
+
+/* =========== Mobile Navigation =========== */
+.navbar__menu-btns {
+  background: none;
+  display: none;
+}
+
+.navbar__menu-icon {
+  color: rgba(14, 54, 81, 0.8);
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.navbar__menu-times {
+  display: none;
+}
+
+/* =========== HERO & HERO CTA =========== */
+/* Section Space is defined in general.css file */
+.section__hero {
+  background-color: var(--primary-color);
+  background: linear-gradient(-45deg, rgba(36, 136, 202, 0.8), rgba(14, 54, 81, 0.8)), url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+}
+
+.hero__container{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+  padding: 4.8rem 3.2rem;
+}
+
+.hero__intro {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero__intro:nth-child(2){
+  margin-bottom: 1.6rem !important;
+}
+
+.hero__cta-form{
+  background-color: #fff;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta__form input{
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.4rem;
+}
+
+.cta__form input::placeholder {
+  color: #aaa;
+}
+
+.cta__form .cta__btn{
+  width: 100%;
+}
+
+.cta__form .separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__form .separator span {
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 2.4rem 0;
+}
+
+.cta__btn-call{
+  background-color: #399147;
+}
+.cta__btn-call:hover{
+  background-color: #317c3d;
+}
+
+
+/* =========== ABOUT US =========== */
+/* Section Space (if any) is defined in general.css file */
+.about__container{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  gap: 4.8rem;
+  padding: 0 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.about__description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+  padding-right: 3.2rem;
+}
+
+.about__img-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about__img{
+  border: 1.6rem solid #fff;
+}
+
+.about__img-back{
+  border: 1.6rem solid #fff;
+  background: url('../img/about/about-1.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 65%;
+  z-index: -3;
+}
+
+.about__img-middle{
+  border: 1.6rem solid #fff;
+  background: url('../img/about/about-2.jpg');
+  background-size: cover;
+  background-position: right center;
+  position: absolute;
+  top: 30%;
+  left: -1.6rem;
+  width: 55%;
+  height: 50%;
+  transform: translateY(-30%);
+  z-index: -2;
+}
+
+.about__img-front{
+  border: 1.6rem solid #fff;
+  background: url('../img/about/about-3.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  width: 80%;
+  height: 60%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+
+/* =========== FEATURES =========== */
+/* Section Space (if any) is defined in general.css file */
+.feature__container{
+  /* align-items: center; */
+  padding: 0 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.feature__img-container{
+  position: relative;
+}
+
+.feature__img-back{
+  background: url('../img/feature/feature-2.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 80%;
+  height: 75%;
+  z-index: -1;
+}
+
+.feature__img-front{
+  background: url('../img/feature/feature-1.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 80%;
+  height: 75%;
+  z-index: -2;
+}
+
+.feature__description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.feature__card-container{
+  display: flex;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+  padding: 0 3.2rem;
+}
+
+.feature__card{
+  position: relative;
+}
+
+.feature__card-title{
+  font-size: 2rem;
+  color: #0e3651;
+  line-height: 1.3;
+  margin-bottom: 1.6rem;
+}
+
+.feature__card-text{
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.feature__static{
+  margin-bottom: 1.6rem;
+}
+
+.feature__static__text{
+  color: #333;
+  display: block;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
+}
+
+.feature__static-line{
+  height: 0.5rem;
+  position: relative;
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.feature__static-line .feature__static-progress{
+  height: 100%;
+  left: 0%;
+  right: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+}
+
+.feature__static-line .seller__progress{
+  right: 35%;
+}
+
+.feature__static-line .market__progress{
+  right: 15%;
+}
+
+.feature__static-line .client__progress{
+  right: 10%;
+}
+
+/* =========== HOW IT WORKS =========== */
+/* Section Space (if any) is defined in general.css file */
+.step__card{
+  border: 1px solid var(--primary-color);
+  padding: 3.2rem;
+  text-align: center;
+}
+
+.step__card-text{
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* =========== SERVICES =========== */
+/* Section Space (if any) is defined in general.css file */
+.service__description{
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* =========== TESTIMONIALS =========== */
+/* Section Space (if any) is defined in general.css file */
+.testimonials__container{
+  max-width: 141rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.testimonial__carousel{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+  padding: 3.2rem 4.8rem;
+}
+
+.testimonial__card-container{
+  display: flex;
+  gap: 6.4rem;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial__card{
+  padding: 0 1.6rem;
+  text-align: center;
+}
+
+.testimonial__img{
+  display: inline-block;
+  text-align: center;
+  width: 8rem;
+  border-radius: 50%;
+  margin: 0 auto 3.2rem;
+}
+
+.testimonial__text{
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.testimonial__text:before {
+  color: #124465;
+  font-family: inherit;
+  font-size: 3.2rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__text:before {
+  content: '\201c';
+}
+
+.testimonial__name{
+  color: #124465;
+  font-size: 2.4rem;
+  font-weight: var(--font-medium);
+  line-height: 1.2;
+}
+
+.testimonial__carousel .arrows .arrow {
+  margin: -3.2rem 0 0;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.testimonial__carousel .arrows .prev {
+  left: -3.2rem;
+}
+
+.testimonial__carousel .arrows .prev:hover .svg {
+  left: -0.8rem;
+}
+
+.testimonial__carousel .arrows .next {
+  right: -3.2rem;
+}
+
+.testimonial__carousel .arrows .next:hover .svg {
+  left: 0.8rem;
+}
+
+.testimonial__carousel .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 1.6rem;
+  height: 2.4rem;
+  fill: #124465;
+  transition: left 0.2s ease;
+}
+
+/* =========== CTA =========== */
+/* Section Space (if any) is defined in general.css file */
+.section__cta{
+  padding: 6.4rem 3.2rem;
+}
+
+.cta__form-container{
+  min-width: 78%;
+  margin: 0 auto;
+}
+
+.section__cta .cta__form input{
+  margin-bottom: 3.2rem;
+}
+
+.cta__btn-end{
+  text-align: right;
+}
+
+.section__cta .cta__btn{
+  width: auto;
+}
+
+.cta__img{
+  background: url('../img/get-offer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+/* =========== BLOG =========== */
+/* Section Space (if any) is defined in general.css file */
+.blogs__container{
+  max-width: 141rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  /* overflow: hidden; */
+}
+
+.blog__carousel{
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+  padding: 3.2rem 3.2rem;
+}
+
+.blog__card-container{
+  display: flex;
+  gap: 4.8rem;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.blog__card{
+  /* border: 2px solid var(--primary-color); */
+  flex: 0 0 40rem;
+  padding: 0 1.6rem;
+}
+
+.blog__img-container{
+  position: relative;
+}
+
+.blog__img{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.blog__full-date{
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.blog__month,
+.blog__date,
+.blog__year{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #124465;
+  margin-bottom: -0.8rem;
+}
+
+.blog__month{
+  margin: -0.8rem 0;
+}
+
+.blog__text-container{
+  padding: 3.2rem 4.8rem;
+}
+
+.blog__text{
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.blog__name{
+  color: #124465;
+  font-size: 2.4rem;
+  font-weight: var(--font-medium);
+  line-height: 1.2;
+}
+
+.blog__carousel .arrows .arrow {
+  margin: -3.2rem 0 0;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.blog__carousel .arrows .prev {
+  left: -3.2rem;
+}
+
+.blog__carousel .arrows .prev:hover .svg {
+  left: -0.8rem;
+}
+
+.blog__carousel .arrows .next {
+  right: -3.2rem;
+}
+
+.blog__carousel .arrows .next:hover .svg {
+  left: 0.8rem;
+}
+
+.blog__carousel .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 1.6rem;
+  height: 2.4rem;
+  fill: #124465;
+  transition: left 0.2s ease;
+}
+/* =========== FOOTER =========== */
+/* Section Space (if any) is defined in general.css file */
+.footer {
+  background: #0e3651;
+}
+
+.footer__container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+  
+  .footer__grid{
+    border-bottom: 1px solid #124465;
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    gap: 4.8rem;
+    padding: 3.2rem 0;
+}
+
+.footer__logo-img {
+  /* Logo size = 142*142 px */
+  height: 14rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer__menu-list {
+  gap: 1.6rem;
+}
+
+.footer__social-list{
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__social-link{
+  /* border: 1px solid #555; */
+  border: 1px solid #124465;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.2rem 2rem;
+  transition: all 300ms;
+}
+
+.footer__social-link:hover,
+.footer__social-link:active{
+  background-color: #fff;
+  color: #0e3651;
+}
+
+/* ACTIVE LINK */
+.active.footer__link:hover,
+.active.footer__link:active{
+  color: #fff;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: var(--z-fixed);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: all 300ms;
+}
+
+.sticky .section__hero {
+  margin-top: 9.6rem;
+}
+
+.footer__cta-form input{
+  background-color: transparent;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #aaa;
+  border: 1px solid #124465;
+  box-shadow: 0 1px 2px rgba(14, 54, 81, 0.1);
+  margin-bottom: 2.4rem;
+}
+
+.footer__cta-form .cta__btn{
+  background-color: #fff;
+  color: #0e3651;
+  width: 100%;
+}
+
+.footer__cta-form{
+  margin-bottom: 3.2rem;
+}
+/* =========== Mobile Navigation =========== */
+.footer__menu-btns {
+  background: none;
+  display: none;
+}
+
+.footer__menu-icon {
+  color: rgba(14, 54, 81, 0.8);
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.footer__menu-times {
+  display: none;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(255, 239, 236, 0.5);
+  margin-top: 3.2rem;
+  text-align: center;
+}

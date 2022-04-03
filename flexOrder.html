@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Order Experiment & Logic</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid #166534;
+        max-width: 750px;
+        margin: 0 auto;
+      }
+
+      .column-container {
+        display: flex;
+        gap: 50px;
+      }
+
+      .columns {
+        cursor: pointer;
+      }
+
+      .column-1 {
+        background-color: #eab308;
+        flex: 1 0 200px;
+        order: 0;
+        padding: 3.2rem;
+      }
+
+      .column-2 {
+        background-color: #84cc16;
+        flex: 1 0 200px;
+        order: 1;
+        padding: 3.2rem;
+      }
+
+      .column-3 {
+        background-color: #0ea5e9;
+        flex: 0 0 200px;
+        order: 2;
+        padding: 3.2rem;
+      }
+
+      .column-4 {
+        background-color: #6366f1;
+        order: 3;
+        padding: 3.2rem;
+      }
+
+      .column-5 {
+        background-color: #8b5cf6;
+        order: 4;
+        padding: 3.2rem;
+      }
+
+      .column__clicked {
+        font-size: 24px;
+        margin-top: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-container">
+        <div class="column-1 columns">Column 1</div>
+
+        <div class="column-2 columns">Column 2</div>
+
+        <div class="column-3 columns">Column 3</div>
+
+        <div class="column-4 columns">Column 4</div>
+        <div class="column-5 columns">Column 5</div>
+      </div>
+    </div>
+    <div class="container column__clicked">column clicked</div>
+
+    <script>
+      const columns = document.querySelectorAll('.columns');
+      const columnClicked = document.querySelector('.column__clicked');
+
+      let orderValue = 0;
+
+      function changeOrderValue() {
+        if (idx > columns.length - 1) {
+          idx = 0;
+        } else if (idx < 0) {
+          idx = columns.length - 1;
+        }
+      }
+
+      function flexOrder() {
+        columns.forEach((column, columnIndex) => {
+          column.addEventListener('click', () => changeFlexOrder(columnIndex));
+        });
+        // console.log('This is the experiment with flex order property');
+      }
+
+      flexOrder();
+
+      function changeFlexOrder(columnIndex) {
+        columns.forEach((column, idx2) => {
+          console.log(idx2, columnIndex);
+          if (idx2 === 0) {
+            column.style.order = `${0}`;
+            console.dir(column);
+          } else {
+            column.style.order = `${idx2}`;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
